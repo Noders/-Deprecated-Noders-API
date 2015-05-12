@@ -2,5 +2,10 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mongodb_test_loopbacl": {
+    "name": "mongodb_test_loopbacl",
+    "database": "mongodb_test_loopbacl",
+    "connector": "mongodb"
   }
 }
