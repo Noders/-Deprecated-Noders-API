@@ -8,22 +8,47 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "noders_mongodb",
+    "public": false
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "noders_mongodb",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "noders_mongodb",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "noders_mongodb",
     "public": false
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "noders_mongodb",
+    "public": false
+  },
+  "Noder": {
+    "dataSource": "noders_mongodb",
+    "public": true
+  },
+  "Partner": {
+    "dataSource": "noders_mongodb",
+    "public": true
+  },
+  "Host": {
+    "dataSource": "noders_mongodb",
+    "public": true
+  },
+  "Evento": {
+    "dataSource": "noders_mongodb",
+    "public": true
+  },
+  "followinghost": {
+    "dataSource": "noders_mongodb",
+    "public": false
+  },
+  "followingnoder": {
+    "dataSource": "noders_mongodb",
     "public": false
   }
 }

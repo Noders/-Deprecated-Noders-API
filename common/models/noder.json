@@ -1,0 +1,73 @@
+{
+  "name": "Noder",
+  "base": "User",
+  "idInjection": true,
+  "properties": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Apellido": {
+      "type": "string"
+    },
+    "Pais": {
+      "type": "string"
+    },
+    "img": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "username_twitter": {
+      "type": "string"
+    },
+    "username_github": {
+      "type": "string"
+    },
+    "geo": {
+      "type": "geopoint"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "host": {
+      "type": "belongsTo",
+      "model": "Host",
+      "foreignKey": ""
+    },
+    "follows": {
+      "type": "hasMany",
+      "model": "Host",
+      "foreignKey": "",
+      "through": "followinghost"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "ADMIN",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY",
+      "property": "deleteById"
+    }
+  ],
+  "methods": []
+}

@@ -3,9 +3,9 @@
     "name": "db",
     "connector": "memory"
   },
-  "mongodb_test_loopbacl": {
-    "name": "mongodb_test_loopbacl",
-    "database": "mongodb_test_loopbacl",
+  "noders_mongodb": {
+    "database": "noders_mongodb",
+    "name": "noders_mongodb",
     "connector": "mongodb"
   }
 }
