@@ -43,12 +43,7 @@
     }
   },
   "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "DENY"
-    },
+    
     {
       "accessType": "READ",
       "principalType": "ROLE",
@@ -56,17 +51,16 @@
       "permission": "ALLOW"
     },
     {
-      "accessType": "WRITE",
+      "accessType": "*",
       "principalType": "ROLE",
-      "principalId": "ADMIN",
+      "principalId": "FOUNDER",
       "permission": "ALLOW"
     },
     {
-      "accessType": "WRITE",
+      "accessType": "EXCECUTE",
       "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "DENY",
-      "property": "deleteById"
+      "principalId": "FOUNDER",
+      "permission": "ALLOW"
     }
   ],
   "methods": []
