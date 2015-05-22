@@ -1,0 +1,21 @@
+{
+  "name": "siguiendocomunidad",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "comunidad": {
+      "type": "belongsTo",
+      "model": "Comunidad",
+      "foreignKey": ""
+    },
+    "noder": {
+      "type": "belongsTo",
+      "model": "Noder",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

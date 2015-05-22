@@ -23,12 +23,12 @@ module.exports = function(app) {
             "username": "fforres",
             "email": "felipe.torressepulveda@gmail.com",
             "password": "founder",
-            "hostId": "5557bec9fa0f567413db2dfc"
+            "comunidadId": "5557bec9fa0f567413db2dfc"
         }, {
             "pais": "Chile",
             "img": "josevildosola.jpg",
             "username": "josevildosola55",
-            "hostId": "5557bec9fa0f567413db2dfc",
+            "comunidadId": "5557bec9fa0f567413db2dfc",
             "email": "josevildosola55@test.com",
             "password": "test",
             "url": "http://www.twitter.com/josevildosola55"
@@ -36,7 +36,7 @@ module.exports = function(app) {
             "pais": "Chile",
             "img": "maetschl.jpeg",
             "username": "maetschl",
-            "hostId": "5557bec9fa0f567413db2dfc",
+            "comunidadId": "5557bec9fa0f567413db2dfc",
             "email": "maetschl@test.com",
             "password": "test",
             "url": "http://www.twitter.com/maetschl"
@@ -44,7 +44,7 @@ module.exports = function(app) {
             "pais": "Ecuador",
             "img": "rchancay.jpeg",
             "username": "r_chancay",
-            "hostId": "5557bedafa0f567413db2dfd",
+            "comunidadId": "5557bedafa0f567413db2dfd",
             "email": "r_chancay@test.com",
             "password": "test",
             "url": "http://www.twitter.com/r_chancay"
@@ -52,7 +52,7 @@ module.exports = function(app) {
             "pais": "El Salvador",
             "img": "AdrianoChiliseo.jpeg",
             "username": "AdrianoChiliseo",
-            "hostId": "5557bedffa0f567413db2dfe",
+            "comunidadId": "5557bedffa0f567413db2dfe",
             "email": "AdrianoChiliseo@test.com",
             "password": "test",
             "url": "http://www.twitter.com/AdrianoChiliseo"
@@ -60,7 +60,7 @@ module.exports = function(app) {
             "pais": "El Salvador",
             "img": "WillBonilla11.jpg",
             "username": "WillBonilla11",
-            "hostId": "5557bedffa0f567413db2dfe",
+            "comunidadId": "5557bedffa0f567413db2dfe",
             "email": "WillBonilla11@test.com",
             "password": "test",
             "url": "http://www.twitter.com/WillBonilla11"
@@ -68,7 +68,7 @@ module.exports = function(app) {
             "pais": "El Salvador",
             "img": "enriquegraficos.png",
             "username": "enriquegraficos",
-            "hostId": "5557bedffa0f567413db2dfe",
+            "comunidadId": "5557bedffa0f567413db2dfe",
             "email": "enriquegraficos@test.com",
             "password": "test",
             "url": "http://www.twitter.com/enriquegraficos"
@@ -76,7 +76,7 @@ module.exports = function(app) {
             "pais": "El Salvador",
             "img": "melvingilbertos.jpg",
             "username": "melvingilbertos",
-            "hostId": "5557bedffa0f567413db2dfe",
+            "comunidadId": "5557bedffa0f567413db2dfe",
             "email": "melvingilbertos@test.com",
             "password": "test",
             "url": "http://www.twitter.com/melvingilbertos"
@@ -84,7 +84,7 @@ module.exports = function(app) {
             "pais": "El Salvador",
             "img": "norr1994.jpg",
             "username": "norr1994",
-            "hostId": "5557bedffa0f567413db2dfe",
+            "comunidadId": "5557bedffa0f567413db2dfe",
             "email": "norr1994@test.com",
             "password": "test",
             "url": "http://www.twitter.com/norr1994"
@@ -92,7 +92,7 @@ module.exports = function(app) {
             "pais": "Argentina",
             "img": "beacon_tech.png",
             "username": "beacon_tech",
-            "hostId": "5557bee3fa0f567413db2dff",
+            "comunidadId": "5557bee3fa0f567413db2dff",
             "email": "beacon_tech@test.com",
             "password": "test",
             "url": "http://www.twitter.com/beacon_tech"
@@ -100,7 +100,7 @@ module.exports = function(app) {
             "pais": "Colombia",
             "img": "icristiam.jpeg",
             "username": "icristiam",
-            "hostId": "5557bee7fa0f567413db2e00",
+            "comunidadId": "5557bee7fa0f567413db2e00",
             "email": "icristiam@test.com",
             "password": "test",
             "url": "http://www.twitter.com/icristiam"
@@ -108,7 +108,7 @@ module.exports = function(app) {
             "pais": "Colombia",
             "img": "Juanqtx.jpg",
             "username": "Juanqtx",
-            "hostId": "5557bee7fa0f567413db2e00",
+            "comunidadId": "5557bee7fa0f567413db2e00",
             "email": "Juanqtx@test.com",
             "password": "test",
             "url": "http://www.twitter.com/Juanqtx"

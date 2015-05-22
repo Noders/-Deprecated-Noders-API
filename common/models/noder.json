@@ -32,18 +32,23 @@
   "relations": {
     "host": {
       "type": "belongsTo",
-      "model": "Host",
+      "model": "Comunidad",
       "foreignKey": ""
     },
-    "follows": {
+    "sigue": {
       "type": "hasMany",
-      "model": "Host",
+      "model": "Comunidad",
       "foreignKey": "",
-      "through": "followinghost"
+      "through": "siguiendocomunidad"
+    },
+    "suscrito": {
+      "type": "hasMany",
+      "model": "Evento",
+      "foreignKey": "",
+      "through": "suscripcionaevento"
     }
   },
   "acls": [
-    
     {
       "accessType": "READ",
       "principalType": "ROLE",

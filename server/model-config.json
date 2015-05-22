@@ -35,7 +35,7 @@
     "dataSource": "noders_mongodb",
     "public": true
   },
-  "Host": {
+  "Comunidad": {
     "dataSource": "noders_mongodb",
     "public": true
   },
@@ -43,11 +43,11 @@
     "dataSource": "noders_mongodb",
     "public": true
   },
-  "followinghost": {
+  "siguiendocomunidad": {
     "dataSource": "noders_mongodb",
     "public": false
   },
-  "followingnoder": {
+  "suscripcionaevento": {
     "dataSource": "noders_mongodb",
     "public": false
   }

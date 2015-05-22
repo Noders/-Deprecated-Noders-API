@@ -1,39 +1,48 @@
 {
-  "name": "Evento",
+  "name": "Comunidad",
   "base": "PersistedModel",
+  "plural": "Comunidades",
   "idInjection": true,
   "properties": {
     "name": {
       "type": "string",
       "required": true
     },
-    "url": {
+    "twitter": {
+      "type": "string"
+    },
+    "facebook": {
       "type": "string"
     },
     "geo": {
       "type": "geopoint",
       "required": true
     },
-    "fechainicio": {
-      "type": "date",
-      "required": true
+    "subname": {
+      "type": "string"
     },
-    "fechatermino": {
-      "type": "date"
+    "url": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
   "relations": {
-    "host": {
-      "type": "belongsTo",
-      "model": "Host",
+    "eventos": {
+      "type": "hasMany",
+      "model": "Evento",
       "foreignKey": ""
     },
-    "suscritos": {
+    "noders": {
+      "type": "hasMany",
+      "model": "Noder",
+      "foreignKey": ""
+    },
+    "seguidores": {
       "type": "hasMany",
       "model": "Noder",
       "foreignKey": "",
-      "through": "suscripcionaevento"
+      "through": "siguiendocomunidad"
     }
   },
   "acls": [
@@ -44,9 +53,9 @@
       "permission": "DENY"
     },
     {
-      "accessType": "READ",
+      "accessType": "WRITE",
       "principalType": "ROLE",
-      "principalId": "$everyone",
+      "principalId": "FOUNDER",
       "permission": "ALLOW"
     },
     {
@@ -58,15 +67,15 @@
     {
       "accessType": "WRITE",
       "principalType": "ROLE",
-      "principalId": "FOUNDER",
-      "permission": "ALLOW"
-    },
-    {
-      "accessType": "WRITE",
-      "principalType": "ROLE",
       "principalId": "$everyone",
       "permission": "DENY",
       "property": "deleteById"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
     }
   ],
   "methods": []
