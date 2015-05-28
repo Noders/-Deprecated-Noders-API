@@ -1,7 +1,7 @@
 {
   "name": "Comunidad",
-  "base": "PersistedModel",
   "plural": "Comunidades",
+  "base": "PersistedModel",
   "idInjection": true,
   "properties": {
     "name": {
@@ -43,6 +43,11 @@
       "model": "Noder",
       "foreignKey": "",
       "through": "siguiendocomunidad"
+    },
+    "partners": {
+      "type": "hasMany",
+      "model": "Partner",
+      "foreignKey": ""
     }
   },
   "acls": [

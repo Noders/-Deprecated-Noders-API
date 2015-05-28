@@ -41,7 +41,7 @@
       "foreignKey": "",
       "through": "siguiendocomunidad"
     },
-    "suscrito": {
+    "paricipante": {
       "type": "hasMany",
       "model": "Evento",
       "foreignKey": "",
