@@ -11,7 +11,9 @@ module.exports = function(app) {
     var Role = app.models.Role;
     var RoleMapping = app.models.RoleMapping;
 
-    function createUsers() {
+    function createUsers(counter) {
+        console.log(counter)
+        if(counter != 2) {return};
         Noder.upsert([{
             "Nombre": "Felipe",
             "Apellido": "Torres",
@@ -114,20 +116,68 @@ module.exports = function(app) {
             "url": "http://www.twitter.com/Juanqtx"
         }], function(err, users) {
             if (err) return console.log(err);
-
-            Role.create({
-                name: 'FOUNDER'
-            }, function(err, role) {
-                role.principals.create({
-                    principalType: RoleMapping.USER,
-                    principalId: users[0].id
-                }, function(err, principal) {
-                    if (err) return console.log(err);
-                });
+            /**/
+            Role.find({
+                where: {
+                    name: "FOUNDER"
+                }
+            }, function(err, roles) {
+                if (role.length > 0) {
+                    var role = role[0];
+                    role.principals.create({
+                        principalType: RoleMapping.USER,
+                        principalId: users[0].id
+                    }, function(err, principal) {
+                        if (err) return console.log(err);
+                    });
+                } else {
+                    if (err) return console.log("Existe más de un role con el nombre FOUNDER");
+                }
 
             });
-
         });
     }
-    //createUsers();
+
+    function createRoles() {
+        var counter = 0;
+        Role.find({
+                where: {
+                    name: "ADMIN"
+                }
+            },
+            function(err, roleEncontrado) {
+                if (roleEncontrado.length == 0) {
+                    Role.create({
+                        name: 'ADMIN'
+                    }, function(err, role) {
+                        if (err) return console.log(err);
+                        else ;
+
+                    });
+
+                }
+            })
+
+
+        Role.find({
+                where: {
+                    name: "FOUNDER"
+                }
+            },
+            function(err, roleEncontrado) {
+                if (roleEncontrado.length == 0) {
+                    Role.create({
+                        name: 'FOUNDER'
+                    }, function(err, role) {
+                        if (err) return console.log(err);
+                        else ;
+                    });
+
+                }
+            })
+
+
+    }
+    //createUsers()
+    createRoles()
 };
