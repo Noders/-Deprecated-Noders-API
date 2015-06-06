@@ -21,11 +21,11 @@
   },
   "RoleMapping": {
     "dataSource": "noders_mongodb",
-    "public": true
+    "public": false
   },
   "Role": {
     "dataSource": "noders_mongodb",
-    "public": true
+    "public": false
   },
   "Noder": {
     "dataSource": "noders_mongodb",
