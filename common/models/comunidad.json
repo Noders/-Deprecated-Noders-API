@@ -1,5 +1,6 @@
 {
-  "name": "Host",
+  "name": "Comunidad",
+  "plural": "Comunidades",
   "base": "PersistedModel",
   "idInjection": true,
   "properties": {
@@ -37,11 +38,16 @@
       "model": "Noder",
       "foreignKey": ""
     },
-    "followers": {
+    "seguidores": {
       "type": "hasMany",
       "model": "Noder",
       "foreignKey": "",
-      "through": "followinghost"
+      "through": "siguiendocomunidad"
+    },
+    "partners": {
+      "type": "hasMany",
+      "model": "Partner",
+      "foreignKey": ""
     }
   },
   "acls": [

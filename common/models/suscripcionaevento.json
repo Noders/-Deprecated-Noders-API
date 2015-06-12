@@ -1,0 +1,21 @@
+{
+  "name": "suscripcionaevento",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "evento": {
+      "type": "belongsTo",
+      "model": "Evento",
+      "foreignKey": ""
+    },
+    "noder": {
+      "type": "belongsTo",
+      "model": "Noder",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

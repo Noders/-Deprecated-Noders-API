@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
-    "pretest": "jshint ."
+    "build": "lb-ng ./server/server.js ./js/NodersAPI.js -u http://api.noders.com/api",
+    "start": "slc run"
   },
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "errorhandler": "^1.1.1",
-    "lodash": "^3.8.0",
+    "lodash": "^3.9.3",
     "loopback": "^2.18.0",
     "loopback-boot": "^2.6.5",
     "loopback-connector-mongodb": "^1.8.0",

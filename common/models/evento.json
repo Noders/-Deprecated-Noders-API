@@ -20,6 +20,10 @@
     },
     "fechatermino": {
       "type": "date"
+    },
+    "urlimagen": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
@@ -27,6 +31,17 @@
     "host": {
       "type": "belongsTo",
       "model": "Host",
+      "foreignKey": ""
+    },
+    "suscritos": {
+      "type": "hasMany",
+      "model": "Noder",
+      "foreignKey": "",
+      "through": "suscripcionaevento"
+    },
+    "comunidad": {
+      "type": "belongsTo",
+      "model": "Comunidad",
       "foreignKey": ""
     }
   },
@@ -59,6 +74,13 @@
       "accessType": "WRITE",
       "principalType": "ROLE",
       "principalId": "$everyone",
+      "permission": "DENY",
+      "property": "deleteById"
+    },,
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "FOUNDER",
       "permission": "DENY",
       "property": "deleteById"
     }
