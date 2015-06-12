@@ -1,6 +1,6 @@
 (function(window, angular, undefined) {'use strict';
 
-var urlBase = "api.noders.com/api";
+var urlBase = "http://api.noders.com/api";
 var authHeader = 'authorization';
 
 /**
@@ -957,6 +957,40 @@ module.factory(
         "prototype$volverAdmin": {
           url: urlBase + "/Noders/:id/volverAdmin",
           method: "POST"
+        },
+
+        /**
+         * @ngdoc method
+         * @name lbServices.Noder#prototype$roles
+         * @methodOf lbServices.Noder
+         *
+         * @description
+         *
+         * <em>
+         * (The remote method definition does not provide any description.)
+         * </em>
+         *
+         * @param {Object=} parameters Request parameters.
+         *
+         *  - `id` – `{*}` - User id
+         *
+         * @param {function(Object,Object)=} successCb
+         *   Success callback with two arguments: `value`, `responseHeaders`.
+         *
+         * @param {function(Object)=} errorCb Error callback with one argument:
+         *   `httpResponse`.
+         *
+         * @returns {Object} An empty reference that will be
+         *   populated with the actual data once the response is returned
+         *   from the server.
+         *
+         * Data properties:
+         *
+         *  - `roles` – `{*=}` - 
+         */
+        "prototype$roles": {
+          url: urlBase + "/Noders/:id/roles",
+          method: "GET"
         },
 
         // INTERNAL. Use Comunidad.noders.findById() instead.

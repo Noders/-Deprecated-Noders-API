@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
-    "pretest": "jshint ."
+    "build": "lb-ng ./server/server.js ./js/NodersAPI.js -u http://api.noders.com/api",
+    "start": "slc run"
   },
   "dependencies": {
     "compression": "^1.0.3",
