@@ -1,82 +1,93 @@
 {
-    "name": "Evento",
-    "base": "PersistedModel",
-    "idInjection": true,
-    "properties": {
-        "name": {
-            "type": "string",
-            "required": true
-        },
-        "url": {
-            "type": "string"
-        },
-        "geo": {
-            "type": "geopoint",
-            "required": true
-        },
-        "fechainicio": {
-            "type": "date",
-            "required": true
-        },
-        "fechatermino": {
-            "type": "date"
-        },
-        "urlimagen": {
-            "type": "string",
-            "required": true
-        }
+  "name": "Evento",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
     },
-    "validations": [],
-    "relations": {
-        "host": {
-            "type": "belongsTo",
-            "model": "Host",
-            "foreignKey": ""
-        },
-        "suscritos": {
-            "type": "hasMany",
-            "model": "Noder",
-            "foreignKey": "",
-            "through": "suscripcionaevento"
-        },
-        "comunidad": {
-            "type": "belongsTo",
-            "model": "Comunidad",
-            "foreignKey": ""
-        }
+    "url": {
+      "type": "string"
     },
-    "acls": [{
-        "accessType": "*",
-        "principalType": "ROLE",
-        "principalId": "$everyone",
-        "permission": "DENY"
-    }, {
-        "accessType": "READ",
-        "principalType": "ROLE",
-        "principalId": "$everyone",
-        "permission": "ALLOW"
-    }, {
-        "accessType": "WRITE",
-        "principalType": "ROLE",
-        "principalId": "ADMIN",
-        "permission": "ALLOW"
-    }, {
-        "accessType": "WRITE",
-        "principalType": "ROLE",
-        "principalId": "FOUNDER",
-        "permission": "ALLOW"
-    }, {
-        "accessType": "WRITE",
-        "principalType": "ROLE",
-        "principalId": "$everyone",
-        "permission": "DENY",
-        "property": "deleteById"
-    }, {
-        "accessType": "WRITE",
-        "principalType": "ROLE",
-        "principalId": "FOUNDER",
-        "permission": "ALLOW",
-        "property": "deleteById"
-    }],
-    "methods": []
+    "geo": {
+      "type": "geopoint",
+      "required": true
+    },
+    "fechainicio": {
+      "type": "date",
+      "required": true
+    },
+    "fechatermino": {
+      "type": "date"
+    },
+    "urlimagen": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "host": {
+      "type": "belongsTo",
+      "model": "Host",
+      "foreignKey": ""
+    },
+    "suscritos": {
+      "type": "hasMany",
+      "model": "Noder",
+      "foreignKey": "",
+      "through": "suscripcionaevento"
+    },
+    "comunidad": {
+      "type": "belongsTo",
+      "model": "Comunidad",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "ADMIN",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "FOUNDER",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY",
+      "property": "deleteById"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "FOUNDER",
+      "permission": "ALLOW",
+      "property": "deleteById"
+    }
+  ],
+  "methods": []
 }
