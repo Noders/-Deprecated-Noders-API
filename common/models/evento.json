@@ -27,7 +27,7 @@
     },
     "descripcion": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "activo": {
       "type": "boolean",
