@@ -28,6 +28,10 @@
     "descripcion": {
       "type": "string",
       "required": true
+    },
+    "activo": {
+      "type": "boolean",
+      "required": false
     }
   },
   "validations": [],
