@@ -50,5 +50,9 @@
   "followingnoder": {
     "dataSource": "noders_mongodb",
     "public": false
+  },
+  "jsconf": {
+    "dataSource": "db",
+    "public": true
   }
 }
