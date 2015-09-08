@@ -43,7 +43,6 @@
     }
   },
   "acls": [
-    
     {
       "accessType": "READ",
       "principalType": "ROLE",
