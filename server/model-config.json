@@ -50,5 +50,9 @@
   "suscripcionaevento": {
     "dataSource": "noders_mongodb",
     "public": false
+  },
+  "jsconf": {
+    "dataSource": "noders_mongodb",
+    "public": true
   }
 }
