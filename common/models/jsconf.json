@@ -26,7 +26,7 @@
     }, {
         "accessType": "WRITE",
         "principalType": "ROLE",
-        "principalId": "ADMIN",
+        "principalId": "$everyone",
         "permission": "ALLOW"
     }, {
         "accessType": "WRITE",
@@ -38,6 +38,19 @@
         "principalType": "ROLE",
         "principalId": "$everyone",
         "permission": "ALLOW"
+    }, {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY",
+      "property": "deleteById"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "FOUNDER",
+      "permission": "ALLOW",
+      "property": "deleteById"
     }],
   "methods": []
 }
